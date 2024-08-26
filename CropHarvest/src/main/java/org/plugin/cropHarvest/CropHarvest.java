@@ -17,10 +17,9 @@ public final class CropHarvest extends JavaPlugin {
         FileConfiguration config = getConfig();
         List<Material> materials = new ArrayList<>();
 
-        for (String el : config.getStringList("")){
+        for (String el : config.getStringList("harvest")){
             materials.add(Material.getMaterial(el));
         }
-
 
         getServer().getPluginManager().registerEvents(new EventsInteractSeed(materials), this);
     }
