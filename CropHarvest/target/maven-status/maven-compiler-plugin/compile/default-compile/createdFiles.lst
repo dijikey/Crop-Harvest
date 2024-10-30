@@ -1,3 +1,3 @@
 org\plugin\cropHarvest\EventsInteractSeed.class
-org\plugin\cropHarvest\EventsInteractSeed$1.class
+org\plugin\cropHarvest\Crops.class
 org\plugin\cropHarvest\CropHarvest.class

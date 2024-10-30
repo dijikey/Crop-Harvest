@@ -1,5 +1,5 @@
 name: CropHarvest
-version: '0.0.1'
+version: '0.1.0'
 main: org.plugin.cropHarvest.CropHarvest
 api-version: '1.21'
 authors: [ HKoly_ ]

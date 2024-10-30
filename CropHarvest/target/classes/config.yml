@@ -1,5 +1,12 @@
-harvest:
-  - "WHEAT"
-  - "POTATOES"
-  - "CARROTS"
-  - "BEETROOTS"
+WHEAT:
+  isEnable: true
+  multiplier: 1
+POTATOES:
+  isEnable: true
+  multiplier: 1
+CARROTS:
+  isEnable: true
+  multiplier: 1
+BEETROOTS:
+  isEnable: true
+  multiplier: 1
