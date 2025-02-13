@@ -1,5 +1,6 @@
 package org.plugin.cropHarvest;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -36,7 +37,20 @@ public class EventsInteractSeed implements Listener {
                 world.dropItemNaturally(location, el);
             }
         }
+
         world.playSound(location, block.getBlockSoundGroup().getBreakSound(),5, 10);
+        String result = parserAgeToZero(block.getBlockData().getAsString());
         world.setType(location, block.getType());
+        Bukkit.getLogger().info(block.getBlockData().getAsString());
+
+
+
+        if (block.getBlockData().getAsString().contains("facing=")) {
+            world.setBlockData(location, Bukkit.createBlockData(result));
+        }
+    }
+
+    private String parserAgeToZero(String enter){
+        return enter.replace("age=2", "age=0");
     }
 }

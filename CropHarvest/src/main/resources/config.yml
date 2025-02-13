@@ -10,3 +10,9 @@ CARROTS:
 BEETROOTS:
   isEnable: true
   multiplier: 1
+COCOA:
+  isEnable: true
+  multiplier: 1
+NETHER_WART:
+  isEnable: true
+  multiplier: 1
