@@ -30,7 +30,9 @@ public class EventsInteractSeed implements Listener {
     private void takeCrop(Block block, Location location, World world, int multiplier){
         for (ItemStack el : block.getDrops())
         {
-            for (int i = 0; i < multiplier; i++){
+            world.dropItemNaturally(location, el);
+
+            for (int i = 1; i < multiplier; i++){
                 world.dropItemNaturally(location, el);
             }
         }
